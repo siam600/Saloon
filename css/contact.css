@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+.banner-img .img-fluid{
+  height: 85vh;
+  width: 500px;
+}
+#top-arrow{
+  position: absolute;
+  display: inline-block;
+  right: 60px;
+  bottom: 40px;
+}
+#top-arrow a{
+  color: #fff;
+  background: #fb0000;
+  font-size: 16px;
+  text-align: center;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+ transition: 0.5s;
+ display: block;
+ position: relative;
+
+}
+#top-arrow a i{
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: backTop 1s linear infinite;
+}
+@keyframes backTop{
+  from{
+    top:20px
+  }
+  to{
+    bottom:60%;
+  }
+}
